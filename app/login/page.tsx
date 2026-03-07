@@ -7,7 +7,6 @@ import { Label } from '@/components/ui/label';
 import { login } from '@/lib/auth-api';
 import { motion } from 'framer-motion';
 import { AlertCircle, Loader2 } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -68,7 +67,8 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <Link href="/" className="flex items-center gap-2 group">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/images/Cleadish.png"
               alt="Cleadish Logo"
               width={80}
