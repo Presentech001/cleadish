@@ -188,10 +188,13 @@ export function DashboardNav() {
                 className="flex items-center gap-3"
                 onClick={() => setMobileNavOpen(false)}
               >
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center text-white font-bold shadow-[0_0_15px_rgba(99,102,241,0.4)]">
-                  C
-                </div>
-                <span className="text-lg font-bold tracking-tight text-white/95">Cleadish</span>
+                <Image
+                  src="/images/Cleadish.png"
+                  alt="Cleadish"
+                  width={80}
+                  height={40}
+                  className="object-contain"
+                />
               </Link>
               <Button
                 variant="ghost"

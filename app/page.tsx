@@ -175,7 +175,7 @@ export default function LandingPage() {
                     <div className="h-4 w-24 bg-white/20 rounded"></div>
                     <div className="h-8 w-8 bg-white/10 rounded-full"></div>
                   </div>
-                  <div className="text-4xl font-bold mb-2">$3,900,000.00</div>
+                  <div className="text-4xl font-bold mb-2">$1,000.00</div>
                   <div className="h-3 w-32 bg-green-400/20 rounded mb-8">
                     <div className="h-full w-2/3 bg-green-400 rounded"></div>
                   </div>
@@ -316,10 +316,13 @@ export default function LandingPage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <div className="col-span-2 lg:col-span-1">
               <Link href="/" className="flex items-center gap-2 mb-6">
-                <div className="w-6 h-6 rounded-lg bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center text-white font-bold text-xs">
-                  C
-                </div>
-                <span className="font-bold tracking-tight">Cleadish</span>
+                <Image
+                  src="/images/Cleadish.png"
+                  alt="Cleadish"
+                  width={80}
+                  height={40}
+                  className="object-contain"
+                />
               </Link>
               <p className="text-white/40 text-sm max-w-xs leading-relaxed">
                 Modern banking tailored to your digital lifestyle. Secure, fast, and remarkably
@@ -402,7 +405,7 @@ export default function LandingPage() {
           </div>
 
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
-            <p>© {new Date().getFullYear()} Cleadish Inc. All rights reserved.</p>
+            <p>© 2002 Cleadish Inc. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <Link href="#" className="hover:text-white transition-colors">
                 Twitter

@@ -25,7 +25,7 @@ Never put backend secrets in the frontend repo or in `NEXT_PUBLIC_*` variables.
 | `JWT_SECRET`     | Yes*     | Secret used to sign/verify JWTs. Use a long random string in production. Default in dev: fallback in code (not safe for prod). |
 | `DATABASE_URL`   | No       | For future use when you add a DB (e.g. TypeORM/Prisma). Example: `postgresql://user:pass@localhost:5432/tridish`. |
 | `MONGODB_URI`    | Yes*     | MongoDB connection string. Example: `mongodb://localhost:27017/tridish`. Used by the auth user store. |
-| `CORS_ORIGINS`   | No       | Comma-separated list of allowed origins. Default: allow all. Example: `https://localhost:3000,https://myapp.com`. |
+| `CORS_ORIGINS`   | No       | Comma-separated list of allowed origins. **Required on Render** when frontend runs on localhost. Example: `http://localhost:3000,http://localhost:3001,http://127.0.0.1:3000,http://127.0.0.1:3001`. |
 | `SWAGGER_ENABLED`| No       | Set to `false` to disable Swagger in production. Default: enabled. |
 
 \* In production you must set `JWT_SECRET` in `.env`; do not rely on the in-code default.
